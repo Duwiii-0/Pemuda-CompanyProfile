@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "AntonSC";
+  src: url("/fonts/AntonSC-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@theme {
+  --color-red: #C1121F;
+  --color-white: #F5FBEF;
+  --color-blue: #88AFCB;
+  --color-black2: #1A1C1E;
+  --font-anton: "AntonSC", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #F5FBEF;
+}
+
+/* Hide scrollbar completely */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: none; 
+}
