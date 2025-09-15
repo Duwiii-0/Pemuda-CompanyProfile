@@ -7,11 +7,11 @@ const LingkupCard = () => {
 
   const cards = [
     {
-      title: "Bertanding",
+      title: "Olahraga",
       image: "photos/bertanding.webp",
     },
     {
-      title: "Olahraga",
+      title: "Edukasi",
       image: "photos/olahraga.webp",
     },
     {
