@@ -17,6 +17,9 @@ const Header = () => {
                 <Link to={""} className="hover:text-red transition-all duration-200">
                     PENGURUS
                 </Link >
+                <Link to={""} className="hover:text-red transition-all duration-200">
+                    KONTAK
+                </Link >
             </div>
         </div>
     </>)
