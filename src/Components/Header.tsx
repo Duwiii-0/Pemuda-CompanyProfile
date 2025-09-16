@@ -4,7 +4,7 @@ const Header = () => {
 
     return(<>
         <div className="w-full h-24 bg-white/30 backdrop-blur-2xl flex justify-between items-center fixed px-40 z-[100]">
-            <a href={""} className="font-anton text-red text-4xl -skew-x-6 uppercase">
+            <a href={""} className="font-anton text-[#97121A] text-4xl -skew-x-6 uppercase">
                 pemuda berprestasi
             </a>
             <div className="flex items-center gap-10 text-black text-lg">
