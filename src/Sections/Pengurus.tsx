@@ -2,38 +2,31 @@
 const Pengurus = () => {
   const pengurusData = [
     {
-      nama: "Bapak Ahmad Suryadi",
-      jabatan: "Pendiri & Pembina",
-      image: "/photos/biru.png",
-      deskripsi: "Merintis pengembangan taekwondo Banyuasin sejak 1998. Sabuk hitam Dan VII dengan sertifikasi pelatih internasional dari World Taekwondo Federation.",
-      prestasi: "Pelatih tim nasional junior 2010-2015",
-      alignment: "left"
+      name: "Charly Junicef Pratama",
+      role: "Pendiri Yayasan Pemuda Berprestasi",
+      photo: "/photos/biru.png",
+      rotation: -2,
     },
     {
-      nama: "Ibu Sari Melati",
-      jabatan: "Ketua Yayasan",
-      image: "/photos/kuning.png",
-      deskripsi: "Atlet nasional taekwondo era 2000-2008. Meraih medali emas SEA Games 2005 dan perunggu Asian Games 2006. Kini fokus mengembangkan atlet putri.",
-      prestasi: "12 medali internasional sebagai atlet",
-      alignment: "right"
+      name: "Emilia Nur Hayani",
+      role: "Ketua Yayasan Pemuda Berprestasi",
+      photo: "/photos/kuning.png",
+      rotation: 2,
     },
     {
-      nama: "Bapak Rizki Pratama",
-      jabatan: "Sekretaris",
-      image: "/photos/pink.png",
-      deskripsi: "Sarjana Keolahragaan Universitas Negeri Jakarta. Spesialis dalam manajemen turnamen dan pengembangan sistem pelatihan modern berbasis data.",
-      prestasi: "Mengelola 30+ kejuaraan nasional",
-      alignment: "left"
+      name: "Lita haryana sari",
+      role: "Sekertaris Yayasan Pemuda Berprestasi",
+      photo: "/photos/pink.png",
+      rotation: -1,
     },
     {
-      nama: "Ibu Diana Putri",
-      jabatan: "Bendahara",
-      image: "/photos/putih.png",
-      deskripsi: "Magister Akuntansi dengan pengalaman 15 tahun di sektor keuangan. Bertanggung jawab atas transparansi pengelolaan dana yayasan dan sponsor.",
-      prestasi: "Pengelola dana Rp 2,5 miliar/tahun",
-      alignment: "right"
-    }
-  ];
+      name: "Rounnisa Aminy",
+      role: "Bendahara Yayasan Pemuda Berprestasi",
+      photo: "/photos/putih.png",
+      rotation: -1,
+    },
+  ]
+
 
   return (
     <section id="pengurus" className="py-20 sm:py-24 lg:py-32 bg-gradient-to-b from-transparent to-white/30">
