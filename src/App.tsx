@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Hero from "./Sections/Hero"
 import Kegiatan from './Sections/Kegiatan'
 import Pengurus from './Sections/Pengurus'
+import Kontak from './Sections/Kontak'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 
@@ -38,6 +39,7 @@ function App() {
         <Hero />
         <Pengurus />
         <Kegiatan />
+        <Kontak />
         <Footer />
       </div>
     </div>
