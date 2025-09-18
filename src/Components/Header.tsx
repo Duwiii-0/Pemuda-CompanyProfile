@@ -1,25 +1,48 @@
-import { Link } from "react-router-dom"
-
 const Header = () => {
+
+    const scrollToSection = (sectionId: string) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    };
 
     return(<>
         <div className="w-full h-24 bg-white/30 backdrop-blur-2xl flex justify-between items-center fixed px-40 z-[100]">
-            <a href={""} className="font-anton text-[#97121A] text-4xl -skew-x-6 uppercase">
+            <button 
+                onClick={() => scrollToSection('hero')} 
+                className="font-anton text-[#97121A] text-4xl -skew-x-6 uppercase cursor-pointer"
+            >
                 pemuda berprestasi
-            </a>
+            </button>
             <div className="flex items-center gap-10 text-black text-lg">
-                <Link to={""} className="hover:text-red transition-all duration-200">
+                <button 
+                    onClick={() => scrollToSection('hero')}
+                    className="hover:text-red transition-all duration-200 cursor-pointer"
+                >
                     BERANDA
-                </Link >
-                <Link to={""} className="hover:text-red transition-all duration-200">  
+                </button>
+                <button 
+                    onClick={() => scrollToSection('kegiatan')}
+                    className="hover:text-red transition-all duration-200 cursor-pointer"
+                >  
                     KEGIATAN
-                </Link >
-                <Link to={""} className="hover:text-red transition-all duration-200">
+                </button>
+                <button 
+                    onClick={() => scrollToSection('pengurus')}
+                    className="hover:text-red transition-all duration-200 cursor-pointer"
+                >
                     PENGURUS
-                </Link >
-                <Link to={""} className="hover:text-red transition-all duration-200">
+                </button>
+                <button 
+                    onClick={() => scrollToSection('kontak')}
+                    className="hover:text-red transition-all duration-200 cursor-pointer"
+                >
                     KONTAK
-                </Link >
+                </button>
             </div>
         </div>
     </>)
