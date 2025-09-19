@@ -2,31 +2,34 @@
 const Pengurus = () => {
   const pengurusData = [
     {
-      name: "Charly Junicef Pratama",
-      role: "Pendiri Yayasan Pemuda Berprestasi",
-      photo: "/photos/biru.png",
-      rotation: -2,
+      nama: "Charly Junicef Pratama",
+      jabatan: "Pendiri Yayasan Pemuda Berprestasi",
+      image: "/photos/biru.png",
+      deskripsi: "Merintis pengembangan taekwondo Banyuasin sejak 1998. Sabuk hitam Dan VII dengan sertifikasi pelatih internasional dari World Taekwondo Federation.",
+      alignment: "left"
     },
     {
-      name: "Emilia Nur Hayani",
-      role: "Ketua Yayasan Pemuda Berprestasi",
-      photo: "/photos/kuning.png",
-      rotation: 2,
+      nama: "Emilia Nur Hayani",
+      jabatan: "Ketua Yayasan Pemuda Berprestasi",
+      image: "/photos/kuning.png",
+      deskripsi: "Atlet nasional taekwondo era 2000-2008. Meraih medali emas SEA Games 2005 dan perunggu Asian Games 2006. Kini fokus mengembangkan atlet putri.",
+      alignment: "right"
     },
     {
-      name: "Lita haryana sari",
-      role: "Sekertaris Yayasan Pemuda Berprestasi",
-      photo: "/photos/pink.png",
-      rotation: -1,
+      nama: "Lita haryana sari",
+      jabatan: "Sekertaris Yayasan Pemuda Berprestasi",
+      image: "/photos/pink.png",
+      deskripsi: "Sarjana Keolahragaan Universitas Negeri Jakarta. Spesialis dalam manajemen turnamen dan pengembangan sistem pelatihan modern berbasis data.",
+      alignment: "left"
     },
     {
-      name: "Rounnisa Aminy",
-      role: "Bendahara Yayasan Pemuda Berprestasi",
-      photo: "/photos/putih.png",
-      rotation: -1,
-    },
-  ]
-
+      nama: "Rounnisa Aminy",
+      jabatan: "Bendahara Yayasan Pemuda Berprestasi",
+      image: "/photos/putih.png",
+      deskripsi: "Magister Akuntansi dengan pengalaman 15 tahun di sektor keuangan. Bertanggung jawab atas transparansi pengelolaan dana yayasan dan sponsor.",
+      alignment: "right"
+    }
+  ];
 
   return (
     <section id="pengurus" className="py-20 sm:py-24 lg:py-32 bg-gradient-to-b from-transparent to-white/30">
@@ -125,9 +128,6 @@ const Pengurus = () => {
                       <div className="flex flex-wrap items-center gap-3 mb-4">
                         <span className="bg-gradient-to-r from-[#C1121F] to-[#97121A] text-white px-4 py-2 rounded-full text-sm font-semibold">
                           {pengurus.jabatan}
-                        </span>
-                        <span className="bg-white/70 text-[#97121A] px-4 py-2 rounded-full text-sm font-medium border border-white/40">
-                          {pengurus.prestasi}
                         </span>
                       </div>
                     </div>

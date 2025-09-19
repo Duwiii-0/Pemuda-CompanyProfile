@@ -22,17 +22,17 @@ const Header = () => {
     return (
         <>
             {/* Header */}
-            <div className="w-full h-16 sm:h-20 lg:h-24 bg-white/30 backdrop-blur-2xl flex justify-between items-center fixed px-4 sm:px-6 lg:px-40 z-[100]">
+            <div className="w-full h-16 sm:h-20 lg:h-24 bg-[#97121A]/60 backdrop-blur-2xl flex justify-between items-center fixed px-4 sm:px-6 lg:px-40 z-[100]">
                 {/* Logo */}
                 <button 
                     onClick={() => scrollToSection('hero')} 
-                    className="font-anton text-[#97121A] text-lg sm:text-xl md:text-2xl lg:text-4xl -skew-x-6 uppercase cursor-pointer"
+                    className="font-anton text-white text-lg sm:text-xl md:text-2xl lg:text-4xl -skew-x-6 uppercase cursor-pointer"
                 >
                     pemuda berprestasi
                 </button>
 
                 {/* Desktop Navigation - Hidden on mobile and tablet */}
-                <nav className="hidden lg:flex items-center gap-8 xl:gap-10 text-black text-lg">
+                <nav className="hidden lg:flex items-center gap-8 xl:gap-10 text-white text-lg">
                     {[
                         { name: 'BERANDA', id: 'hero' },
                         { name: 'PENGURUS', id: 'pengurus' },
