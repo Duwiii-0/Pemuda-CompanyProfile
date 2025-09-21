@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Hero from "./Sections/Hero"
 import Kegiatan from './Sections/Kegiatan'
 import Pengurus from './Sections/Pengurus'
