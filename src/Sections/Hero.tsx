@@ -1,5 +1,9 @@
 // Hero.tsx
-const Hero = () => {
+interface HeroProps {
+  onScrollToCompetitions: () => void;
+}
+
+const Hero: React.FC<HeroProps> = ({ onScrollToCompetitions }) => {
   return (
     <section id="hero" className="relative">
       <div className="relative w-full h-screen flex items-center overflow-hidden">
@@ -33,25 +37,13 @@ const Hero = () => {
                 </p>
               </div>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4">
+              {/* CTA Button */}
+              <div className="pt-4">
                 <button 
-                  onClick={() => {
-                    const element = document.getElementById('kegiatan');
-                    if (element) element.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="bg-[#C1121F] text-white px-6 py-3 rounded-xl font-bold text-sm sm:text-base hover:bg-[#97121A] transition-all duration-300 hover:scale-105 shadow-lg"
+                  onClick={onScrollToCompetitions}
+                  className="bg-[#C1121F] text-white px-6 py-3 rounded-xl font-bold text-sm sm:text-base hover:bg-[#97121A] transition-all duration-300 hover:scale-105 shadow-lg cursor-pointer active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#C1121F] focus:ring-opacity-50"
                 >
                   Lihat Kejuaraan Kami
-                </button>
-                <button 
-                  onClick={() => {
-                    const element = document.getElementById('kontak');
-                    if (element) element.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="bg-transparent border-2 border-[#C1121F] text-[#C1121F] px-6 py-3 rounded-xl font-bold text-sm sm:text-base hover:bg-[#C1121F] hover:text-white transition-all duration-300 hover:scale-105 shadow-lg"
-                >
-                  Daftar Sekarang
                 </button>
               </div>
             </div>

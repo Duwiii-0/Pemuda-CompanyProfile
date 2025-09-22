@@ -1,11 +1,48 @@
+import { useRef } from 'react'
 import Hero from "./Sections/Hero"
 import Kegiatan from './Sections/Kegiatan'
 import Pengurus from './Sections/Pengurus'
 import Kontak from './Sections/Kontak'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
+import CompetitionsSection from './Sections/CompetitionsSection'
 
 function App() {
+  // Refs untuk smooth scrolling
+  const competitionsRef = useRef<HTMLDivElement>(null)
+  const kegiatanRef = useRef<HTMLDivElement>(null)
+  const pengurusRef = useRef<HTMLDivElement>(null)
+  const kontakRef = useRef<HTMLDivElement>(null)
+
+  // Function untuk scroll ke section tertentu
+  const scrollToSection = (sectionName: string) => {
+    let targetRef;
+    
+    switch(sectionName) {
+      case 'competitions':
+        targetRef = competitionsRef;
+        break;
+      case 'kegiatan':
+        targetRef = kegiatanRef;
+        break;
+      case 'pengurus':
+        targetRef = pengurusRef;
+        break;
+      case 'kontak':
+        targetRef = kontakRef;
+        break;
+      default:
+        return;
+    }
+    
+    if (targetRef?.current) {
+      targetRef.current.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }
+
   return (
     <div style={{
       position: 'relative',
@@ -34,11 +71,29 @@ function App() {
       
       {/* Content wrapper */}
       <div style={{ position: 'relative', zIndex: 1 }}>
-        <Header />
-        <Hero />
-        <Pengurus />
-        <Kegiatan />
-        <Kontak />
+        <Header onScrollTo={scrollToSection} />
+        <Hero onScrollToCompetitions={() => scrollToSection('competitions')} />
+        
+        {/* Competitions Section */}
+        <div ref={competitionsRef}>
+          <CompetitionsSection />
+        </div>
+        
+        {/* Pengurus Section */}
+        <div ref={pengurusRef}>
+          <Pengurus />
+        </div>
+        
+        {/* Kegiatan Section */}
+        <div ref={kegiatanRef}>
+          <Kegiatan />
+        </div>
+        
+        {/* Kontak Section */}
+        <div ref={kontakRef}>
+          <Kontak />
+        </div>
+        
         <Footer />
       </div>
     </div>

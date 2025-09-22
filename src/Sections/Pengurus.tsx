@@ -74,7 +74,7 @@ const Pengurus = () => {
                     Visi Pendiri
                   </h3>
                   <h4 className="text-xl sm:text-2xl text-gray-600 font-medium">
-                    Ahmad Suryadi, Dan VII
+                    Charly Junicef Pratama                    
                   </h4>
                   <p className="text-sm text-gray-500 mt-1">Pendiri Yayasan Restasi Banyuasin</p>
                 </div>
@@ -92,7 +92,7 @@ const Pengurus = () => {
                 
                 <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between">
                   <div className="text-center sm:text-right">
-                    <div className="text-[#97121A] font-bold text-lg">Ahmad Suryadi</div>
+                    <div className="text-[#97121A] font-bold text-lg">Charly Junicef Pratama</div>
                     <div className="text-sm text-gray-500">Sabuk Hitam Dan VII</div>
                   </div>
                   <div className="text-center sm:text-left mt-4 sm:mt-0">

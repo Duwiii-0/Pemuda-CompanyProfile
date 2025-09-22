@@ -1,23 +1,41 @@
 import { useState } from 'react'
 
-const Header = () => {
+interface HeaderProps {
+  onScrollTo?: (section: string) => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ onScrollTo }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [isCompetitionsDropdownOpen, setIsCompetitionsDropdownOpen] = useState(false)
 
     const scrollToSection = (sectionId: string) => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-            element.scrollIntoView({ 
-                behavior: 'smooth',
-                block: 'start'
-            });
+        if (sectionId === 'competitions' && onScrollTo) {
+            onScrollTo('competitions');
+        } else {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
         }
         // Close mobile menu after clicking
         setIsMenuOpen(false);
+        setIsCompetitionsDropdownOpen(false);
     };
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+
+    const competitionCategories = [
+        { id: 'sports', name: 'Olahraga', description: 'Taekwondo, Futsal' },
+        { id: 'academic', name: 'Akademik', description: 'Olimpiade Matematika' },
+        { id: 'creative', name: 'Kreatif', description: 'Design, Sastra' },
+        { id: 'business', name: 'Bisnis', description: 'Entrepreneur Summit' },
+        { id: 'technology', name: 'Teknologi', description: 'Innovation Challenge' },
+    ];
 
     return (
         <>
@@ -35,6 +53,7 @@ const Header = () => {
                 <nav className="hidden lg:flex items-center gap-8 xl:gap-10 text-white text-lg">
                     {[
                         { name: 'BERANDA', id: 'hero' },
+                        { name: 'KEJUARAAN', id: 'competitions' },
                         { name: 'PENGURUS', id: 'pengurus' },
                         { name: 'KEGIATAN', id: 'kegiatan' },
                         { name: 'KONTAK', id: 'kontak' }
@@ -56,13 +75,13 @@ const Header = () => {
                     className="lg:hidden w-10 h-10 flex flex-col items-center justify-center space-y-1.5 cursor-pointer group"
                     aria-label="Toggle menu"
                 >
-                    <span className={`w-6 h-0.5 bg-[#97121A] rounded-full transition-all duration-300 ${
+                    <span className={`w-6 h-0.5 bg-white rounded-full transition-all duration-300 ${
                         isMenuOpen ? 'rotate-45 translate-y-2' : 'group-hover:w-7'
                     }`}></span>
-                    <span className={`w-6 h-0.5 bg-[#97121A] rounded-full transition-all duration-300 ${
+                    <span className={`w-6 h-0.5 bg-white rounded-full transition-all duration-300 ${
                         isMenuOpen ? 'opacity-0' : 'group-hover:w-5'
                     }`}></span>
-                    <span className={`w-6 h-0.5 bg-[#97121A] rounded-full transition-all duration-300 ${
+                    <span className={`w-6 h-0.5 bg-white rounded-full transition-all duration-300 ${
                         isMenuOpen ? '-rotate-45 -translate-y-2' : 'group-hover:w-7'
                     }`}></span>
                 </button>
@@ -99,6 +118,7 @@ const Header = () => {
                 <nav className="px-4 sm:px-6 space-y-2">
                     {[
                         { name: 'BERANDA', id: 'hero' },
+                        { name: 'KEJUARAAN', id: 'competitions' },
                         { name: 'PENGURUS', id: 'pengurus' },
                         { name: 'KEGIATAN', id: 'kegiatan' },
                         { name: 'KONTAK', id: 'kontak' }
@@ -124,7 +144,7 @@ const Header = () => {
                 <div className="absolute bottom-6 left-4 sm:left-6 right-4 sm:right-6">
                     <div className="text-center text-sm text-gray-600">
                         <p className="font-medium">Pemuda Banyuasin</p>
-                        <p>Yayasan Restasi</p>
+                        <p>Yayasan Prestasi</p>
                     </div>
                 </div>
             </div>
