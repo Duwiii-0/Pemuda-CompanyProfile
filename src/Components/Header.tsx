@@ -6,7 +6,6 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ onScrollTo }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
-    const [isCompetitionsDropdownOpen, setIsCompetitionsDropdownOpen] = useState(false)
 
     const scrollToSection = (sectionId: string) => {
         if (sectionId === 'competitions' && onScrollTo) {
@@ -22,20 +21,11 @@ const Header: React.FC<HeaderProps> = ({ onScrollTo }) => {
         }
         // Close mobile menu after clicking
         setIsMenuOpen(false);
-        setIsCompetitionsDropdownOpen(false);
     };
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
-
-    const competitionCategories = [
-        { id: 'sports', name: 'Olahraga', description: 'Taekwondo, Futsal' },
-        { id: 'academic', name: 'Akademik', description: 'Olimpiade Matematika' },
-        { id: 'creative', name: 'Kreatif', description: 'Design, Sastra' },
-        { id: 'business', name: 'Bisnis', description: 'Entrepreneur Summit' },
-        { id: 'technology', name: 'Teknologi', description: 'Innovation Challenge' },
-    ];
 
     return (
         <>
