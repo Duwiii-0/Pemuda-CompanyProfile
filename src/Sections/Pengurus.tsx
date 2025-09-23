@@ -17,7 +17,7 @@ const Pengurus = () => {
     },
     {
       nama: "Lita haryana sari",
-      jabatan: "Sekertaris Yayasan Pemuda Berprestasi",
+      jabatan: "Sekretaris Yayasan Pemuda Berprestasi",
       image: "/photos/pink.png",
       deskripsi: "Sarjana Keolahragaan Universitas Negeri Jakarta. Spesialis dalam manajemen turnamen dan pengembangan sistem pelatihan modern berbasis data.",
       alignment: "left"
