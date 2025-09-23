@@ -2,14 +2,14 @@
 const Pengurus = () => {
   const pengurusData = [
     {
-      nama: "Charly Junicef Pratama",
+      nama: "Nama saya Carli Junicef Vratama, S.Pi.,M.Si",
       jabatan: "Pendiri Yayasan Pemuda Berprestasi",
       image: "/photos/biru.png",
       deskripsi: "Merintis pengembangan taekwondo Banyuasin sejak 1998. Sabuk hitam Dan VII dengan sertifikasi pelatih internasional dari World Taekwondo Federation.",
       alignment: "left"
     },
     {
-      nama: "Emilia Nur Hayani",
+      nama: "Emilia Nurhayani,S.Pd",
       jabatan: "Ketua Yayasan Pemuda Berprestasi",
       image: "/photos/kuning.png",
       deskripsi: "Atlet nasional taekwondo era 2000-2008. Meraih medali emas SEA Games 2005 dan perunggu Asian Games 2006. Kini fokus mengembangkan atlet putri.",
@@ -17,13 +17,13 @@ const Pengurus = () => {
     },
     {
       nama: "Lita haryana sari",
-      jabatan: "Sekretaris Yayasan Pemuda Berprestasi",
+      jabatan: "Sekertaris Yayasan Pemuda Berprestasi",
       image: "/photos/pink.png",
       deskripsi: "Sarjana Keolahragaan Universitas Negeri Jakarta. Spesialis dalam manajemen turnamen dan pengembangan sistem pelatihan modern berbasis data.",
       alignment: "left"
     },
     {
-      nama: "Rounnisa Aminy",
+      nama: "Lita Haryana Sari,SE",
       jabatan: "Bendahara Yayasan Pemuda Berprestasi",
       image: "/photos/putih.png",
       deskripsi: "Magister Akuntansi dengan pengalaman 15 tahun di sektor keuangan. Bertanggung jawab atas transparansi pengelolaan dana yayasan dan sponsor.",
