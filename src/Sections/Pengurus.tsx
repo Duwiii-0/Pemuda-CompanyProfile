@@ -2,7 +2,7 @@
 const Pengurus = () => {
   const pengurusData = [
     {
-      nama: "Nama saya Carli Junicef Vratama, S.Pi.,M.Si",
+      nama: "Carli Junicef Vratama, S.Pi.,M.Si",
       jabatan: "Pendiri Yayasan Pemuda Berprestasi",
       image: "/photos/biru.png",
       deskripsi: "Merintis pengembangan taekwondo Banyuasin sejak 1998. Sabuk hitam Dan VII dengan sertifikasi pelatih internasional dari World Taekwondo Federation.",
@@ -16,8 +16,8 @@ const Pengurus = () => {
       alignment: "right"
     },
     {
-      nama: "Lita haryana sari",
-      jabatan: "Sekertaris Yayasan Pemuda Berprestasi",
+      nama: "Rounisa Aminy, S.Pd",
+      jabatan: "Sekretaris Yayasan Pemuda Berprestasi",
       image: "/photos/pink.png",
       deskripsi: "Sarjana Keolahragaan Universitas Negeri Jakarta. Spesialis dalam manajemen turnamen dan pengembangan sistem pelatihan modern berbasis data.",
       alignment: "left"
