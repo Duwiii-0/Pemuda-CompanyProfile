@@ -49,7 +49,7 @@ function App() {
       minHeight: '100vh',
       // Putih ke abu-abu gelap - Perfect untuk Taekwondo
       background: `
-        linear-gradient(135deg, rgba(248, 248, 248, 0.6) 0%, rgba(248, 248, 248, 0.6) 20%, rgba(248, 248, 248, 0.6) 50%, rgba(248, 248, 248, 0.6) 100%),
+        linear-gradient(135deg, rgba(248, 248, 248, 0.8) 0%, rgba(248, 248, 248, 0.6) 20%, rgba(248, 248, 248, 0.8) 50%, rgba(248, 248, 248, 0.75) 100%),
         url('/photos/texture.jpg')
       `,
       backgroundSize: 'cover, 300px 300px',
