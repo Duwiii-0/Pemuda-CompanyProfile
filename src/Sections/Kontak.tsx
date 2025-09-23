@@ -41,7 +41,7 @@ const Kontak = () => {
                         </div>
                         <div>
                           <p className="font-semibold text-[#97121A] text-lg">Alamat</p>
-                          <p className="text-gray-700">Jl. Pemuda No. 123, Jakarta</p>
+                          <p className="text-gray-700">Jl. Lingkar RT/RW 021/005, Kelurahan Kedondong Raye, Kecamatan Banyuasin III, Kabupaten Banyuasin, Provinsi Sumatera Selatan.</p>
                         </div>
                       </div>
                     </div>
@@ -56,7 +56,7 @@ const Kontak = () => {
                         </div>
                         <div>
                           <p className="font-semibold text-[#97121A] text-lg">Telepon</p>
-                          <p className="text-gray-700">+62 812-3456-7890</p>
+                          <p className="text-gray-700">+62 821-7782-2224</p>
                         </div>
                       </div>
                     </div>
@@ -71,7 +71,7 @@ const Kontak = () => {
                         </div>
                         <div>
                           <p className="font-semibold text-[#97121A] text-lg">Email</p>
-                          <p className="text-gray-700">info@pemudaberprestasi.com</p>
+                          <p className="text-gray-700">pemudaberprestasibanyuasin1@gmail.com</p>
                         </div>
                       </div>
                     </div>
