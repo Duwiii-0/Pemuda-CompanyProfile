@@ -7,12 +7,12 @@ const Hero: React.FC<HeroProps> = ({ onScrollToCompetitions }) => {
   return (
     <section id="hero" className="relative">
       <div className="relative w-full h-screen flex items-center overflow-hidden">
-        {/* Background overlay untuk readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white/50 via-transparent to-white/30 z-10"></div>
+        {/* Background overlay untuk readability - TETAP z-10 tapi NON-INTERACTIVE */}
+        <div className="absolute inset-0 bg-gradient-to-r from-white/50 via-transparent to-white/30 z-10 pointer-events-none"></div>
         
-        {/* Main Content Container */}
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-20 pt-20 sm:pt-24 lg:pt-0">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[calc(100vh-6rem)]">
+        {/* Main Content Container - z-20 untuk konten interaktif */}
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-20 pt-20 sm:pt-24 lg:pt-0 relative z-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             
             {/* Left Column - Text Content */}
             <div className="space-y-4 sm:space-y-6 lg:space-y-8">

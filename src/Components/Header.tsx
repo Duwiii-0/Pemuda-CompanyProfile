@@ -29,9 +29,8 @@ const Header: React.FC<HeaderProps> = ({ onScrollTo }) => {
 
     return (
         <>
-            {/* Header */}
-            <div className="w-full h-16 sm:h-20 lg:h-24 bg-[#97121A]/60 backdrop-blur-2xl flex justify-between items-center fixed px-4 sm:px-6 lg:px-40 z-[100]">
-                {/* Logo */}
+           {/* Header */}
+            <div className="w-full h-16 sm:h-20 lg:h-24 bg-[#97121A]/60 backdrop-blur-2xl flex justify-between items-center fixed top-0 left-0 right-0 px-4 sm:px-6 lg:px-40 z-50">
                 <button 
                     onClick={() => scrollToSection('hero')} 
                     className="font-anton text-white text-lg sm:text-xl md:text-2xl lg:text-4xl -skew-x-6 uppercase cursor-pointer"

@@ -9,6 +9,7 @@ import CompetitionsSection from './Sections/CompetitionsSection'
 
 function App() {
   // Refs untuk smooth scrolling
+  const heroRef = useRef<HTMLDivElement>(null)
   const competitionsRef = useRef<HTMLDivElement>(null)
   const kegiatanRef = useRef<HTMLDivElement>(null)
   const pengurusRef = useRef<HTMLDivElement>(null)
@@ -19,6 +20,9 @@ function App() {
     let targetRef;
     
     switch(sectionName) {
+      case 'hero':  // Tambahkan case hero
+        targetRef = heroRef;
+        break;
       case 'competitions':
         targetRef = competitionsRef;
         break;
@@ -47,7 +51,6 @@ function App() {
     <div style={{
       position: 'relative',
       minHeight: '100vh',
-      // Putih ke abu-abu gelap - Perfect untuk Taekwondo
       background: `
         linear-gradient(135deg, rgba(248, 248, 248, 0.8) 0%, rgba(248, 248, 248, 0.6) 20%, rgba(248, 248, 248, 0.8) 50%, rgba(248, 248, 248, 0.75) 100%),
         url('/photos/texture.jpg')
@@ -72,7 +75,9 @@ function App() {
       {/* Content wrapper */}
       <div style={{ position: 'relative', zIndex: 1 }}>
         <Header onScrollTo={scrollToSection} />
-        <Hero onScrollToCompetitions={() => scrollToSection('competitions')} />
+        <div ref={heroRef}>
+          <Hero onScrollToCompetitions={() => scrollToSection('competitions')} />
+        </div>
         
         {/* Competitions Section */}
         <div ref={competitionsRef}>
