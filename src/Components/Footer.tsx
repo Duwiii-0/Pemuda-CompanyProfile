@@ -26,9 +26,9 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <h4 className="font-semibold mb-4">Kontak</h4>
             <div className="space-y-2 text-sm text-gray-200">
-              <p>Jl. Pemuda No. 123, Jakarta</p>
-              <p>+62 812-3456-7890</p>
-              <p>info@pemudaberprestasi.com</p>
+              <p>Jl. Lingkar RT/RW 021/005, Kelurahan Kedondong Raye, Kecamatan Banyuasin III, Kabupaten Banyuasin, Provinsi Sumatera Selatan.</p>
+              <p>+62 821-7782-2224</p>
+              <p>pemudaberprestasibanyuasin1@gmail.com</p>
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-gray-700 mt-8 pt-6 text-center">
           <p className="text-sm text-gray-400">
-            © 2024 Pemuda Berprestasi. All rights reserved.
+            © 2025 Pemuda Berprestasi. All rights reserved.
           </p>
         </div>
       </div>
